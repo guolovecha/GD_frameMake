@@ -27,6 +27,12 @@
 		6FCC19AE17BFD4FE009F63CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197D17BFD4FD009F63CE /* Foundation.framework */; };
 		6FCC19B617BFD4FE009F63CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC19B417BFD4FE009F63CE /* InfoPlist.strings */; };
 		6FCC19B917BFD4FE009F63CE /* GD_frameMakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19B817BFD4FE009F63CE /* GD_frameMakeTests.m */; };
+		6FCC19CC17BFD8DA009F63CE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC19CB17BFD8DA009F63CE /* libsqlite3.dylib */; };
+		6FCC19D717BFD903009F63CE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19CE17BFD903009F63CE /* FMDatabase.m */; };
+		6FCC19D817BFD903009F63CE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19D017BFD903009F63CE /* FMDatabaseAdditions.m */; };
+		6FCC19D917BFD903009F63CE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19D217BFD903009F63CE /* FMDatabasePool.m */; };
+		6FCC19DA17BFD903009F63CE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19D417BFD903009F63CE /* FMDatabaseQueue.m */; };
+		6FCC19DB17BFD903009F63CE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19D617BFD903009F63CE /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,17 @@
 		6FCC19B517BFD4FE009F63CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FCC19B717BFD4FE009F63CE /* GD_frameMakeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GD_frameMakeTests.h; sourceTree = "<group>"; };
 		6FCC19B817BFD4FE009F63CE /* GD_frameMakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GD_frameMakeTests.m; sourceTree = "<group>"; };
+		6FCC19CB17BFD8DA009F63CE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6FCC19CD17BFD903009F63CE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		6FCC19CE17BFD903009F63CE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		6FCC19CF17BFD903009F63CE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		6FCC19D017BFD903009F63CE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		6FCC19D117BFD903009F63CE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		6FCC19D217BFD903009F63CE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		6FCC19D317BFD903009F63CE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		6FCC19D417BFD903009F63CE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		6FCC19D517BFD903009F63CE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		6FCC19D617BFD903009F63CE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FCC19CC17BFD8DA009F63CE /* libsqlite3.dylib in Frameworks */,
 				6FCC197C17BFD4FD009F63CE /* UIKit.framework in Frameworks */,
 				6FCC197E17BFD4FD009F63CE /* Foundation.framework in Frameworks */,
 				6FCC198017BFD4FD009F63CE /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +133,7 @@
 		6FCC197A17BFD4FD009F63CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FCC19CB17BFD8DA009F63CE /* libsqlite3.dylib */,
 				6FCC197B17BFD4FD009F63CE /* UIKit.framework */,
 				6FCC197D17BFD4FD009F63CE /* Foundation.framework */,
 				6FCC197F17BFD4FD009F63CE /* CoreGraphics.framework */,
@@ -126,6 +145,8 @@
 		6FCC198117BFD4FD009F63CE /* GD_frameMake */ = {
 			isa = PBXGroup;
 			children = (
+				6FCC19C317BFD5E4009F63CE /* Resources */,
+				6FCC19C217BFD5CB009F63CE /* class */,
 				6FCC198A17BFD4FD009F63CE /* MainAppDelegate.h */,
 				6FCC198B17BFD4FD009F63CE /* MainAppDelegate.m */,
 				6FCC199317BFD4FD009F63CE /* MainMasterViewController.h */,
@@ -172,6 +193,86 @@
 				6FCC19B417BFD4FE009F63CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FCC19C217BFD5CB009F63CE /* class */ = {
+			isa = PBXGroup;
+			children = (
+				6FCC19C817BFD7FE009F63CE /* Vendor */,
+				6FCC19C717BFD788009F63CE /* iPad */,
+				6FCC19C617BFD772009F63CE /* iPhone */,
+				6FCC19C517BFD760009F63CE /* Conifg */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		6FCC19C317BFD5E4009F63CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FCC19C417BFD633009F63CE /* Public */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6FCC19C417BFD633009F63CE /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		6FCC19C517BFD760009F63CE /* Conifg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Conifg;
+			sourceTree = "<group>";
+		};
+		6FCC19C617BFD772009F63CE /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		6FCC19C717BFD788009F63CE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		6FCC19C817BFD7FE009F63CE /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6FCC19CA17BFD8CD009F63CE /* FMDB */,
+				6FCC19C917BFD810009F63CE /* Tools */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		6FCC19C917BFD810009F63CE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6FCC19CA17BFD8CD009F63CE /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				6FCC19CD17BFD903009F63CE /* FMDatabase.h */,
+				6FCC19CE17BFD903009F63CE /* FMDatabase.m */,
+				6FCC19CF17BFD903009F63CE /* FMDatabaseAdditions.h */,
+				6FCC19D017BFD903009F63CE /* FMDatabaseAdditions.m */,
+				6FCC19D117BFD903009F63CE /* FMDatabasePool.h */,
+				6FCC19D217BFD903009F63CE /* FMDatabasePool.m */,
+				6FCC19D317BFD903009F63CE /* FMDatabaseQueue.h */,
+				6FCC19D417BFD903009F63CE /* FMDatabaseQueue.m */,
+				6FCC19D517BFD903009F63CE /* FMResultSet.h */,
+				6FCC19D617BFD903009F63CE /* FMResultSet.m */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +393,11 @@
 				6FCC198C17BFD4FD009F63CE /* MainAppDelegate.m in Sources */,
 				6FCC199517BFD4FD009F63CE /* MainMasterViewController.m in Sources */,
 				6FCC199817BFD4FD009F63CE /* MainDetailViewController.m in Sources */,
+				6FCC19D717BFD903009F63CE /* FMDatabase.m in Sources */,
+				6FCC19D817BFD903009F63CE /* FMDatabaseAdditions.m in Sources */,
+				6FCC19D917BFD903009F63CE /* FMDatabasePool.m in Sources */,
+				6FCC19DA17BFD903009F63CE /* FMDatabaseQueue.m in Sources */,
+				6FCC19DB17BFD903009F63CE /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +535,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GD_frameMake/GD_frameMake-Prefix.pch";
 				INFOPLIST_FILE = "GD_frameMake/GD_frameMake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,6 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GD_frameMake/GD_frameMake-Prefix.pch";
 				INFOPLIST_FILE = "GD_frameMake/GD_frameMake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
