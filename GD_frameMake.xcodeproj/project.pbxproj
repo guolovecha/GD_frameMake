@@ -12,6 +12,7 @@
 		6F0CF04917BFDD10000B798E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04217BFDD10000B798E /* FMDatabasePool.m */; };
 		6F0CF04A17BFDD10000B798E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04417BFDD10000B798E /* FMDatabaseQueue.m */; };
 		6F0CF04B17BFDD10000B798E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04617BFDD10000B798E /* FMResultSet.m */; };
+		6F0CF04F17BFE21E000B798E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04E17BFE21E000B798E /* JSONKit.m */; };
 		6FCC197C17BFD4FD009F63CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197B17BFD4FD009F63CE /* UIKit.framework */; };
 		6FCC197E17BFD4FD009F63CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197D17BFD4FD009F63CE /* Foundation.framework */; };
 		6FCC198017BFD4FD009F63CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197F17BFD4FD009F63CE /* CoreGraphics.framework */; };
@@ -56,6 +57,8 @@
 		6F0CF04417BFDD10000B798E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		6F0CF04517BFDD10000B798E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		6F0CF04617BFDD10000B798E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		6F0CF04D17BFE21E000B798E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		6F0CF04E17BFE21E000B798E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		6FCC197817BFD4FD009F63CE /* GD_frameMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GD_frameMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC197B17BFD4FD009F63CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6FCC197D17BFD4FD009F63CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,15 @@
 				6F0CF04617BFDD10000B798E /* FMResultSet.m */,
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		6F0CF04C17BFDDF6000B798E /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				6F0CF04D17BFE21E000B798E /* JSONKit.h */,
+				6F0CF04E17BFE21E000B798E /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		6FCC196F17BFD4FD009F63CE = {
@@ -262,6 +274,7 @@
 		6FCC19C817BFD7FE009F63CE /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6F0CF04C17BFDDF6000B798E /* JSONKit */,
 				6F0CF03C17BFDCC1000B798E /* FMDB */,
 				6FCC19C917BFD810009F63CE /* Tools */,
 			);
@@ -398,6 +411,7 @@
 				6F0CF04917BFDD10000B798E /* FMDatabasePool.m in Sources */,
 				6F0CF04A17BFDD10000B798E /* FMDatabaseQueue.m in Sources */,
 				6F0CF04B17BFDD10000B798E /* FMResultSet.m in Sources */,
+				6F0CF04F17BFE21E000B798E /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
