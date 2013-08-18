@@ -12,9 +12,9 @@
 		6F0CF04917BFDD10000B798E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04217BFDD10000B798E /* FMDatabasePool.m */; };
 		6F0CF04A17BFDD10000B798E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04417BFDD10000B798E /* FMDatabaseQueue.m */; };
 		6F0CF04B17BFDD10000B798E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04617BFDD10000B798E /* FMResultSet.m */; };
-		6F0CF04F17BFE21E000B798E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04E17BFE21E000B798E /* JSONKit.m */; };
-		6F0CF05417BFE2DA000B798E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CF05117BFE2DA000B798E /* SVProgressHUD.bundle */; };
-		6F0CF05517BFE2DA000B798E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF05317BFE2DA000B798E /* SVProgressHUD.m */; };
+		6F0CF04F17BFE21E000B798E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF04E17BFE21E000B798E /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F0CF05C17C074D7000B798E /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF05B17C074D7000B798E /* UIImage+Extensions.m */; };
+		6F0CF05F17C0796B000B798E /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF05E17C0796B000B798E /* NSDate+Extensions.m */; };
 		6FCC197C17BFD4FD009F63CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197B17BFD4FD009F63CE /* UIKit.framework */; };
 		6FCC197E17BFD4FD009F63CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197D17BFD4FD009F63CE /* Foundation.framework */; };
 		6FCC198017BFD4FD009F63CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC197F17BFD4FD009F63CE /* CoreGraphics.framework */; };
@@ -61,9 +61,10 @@
 		6F0CF04617BFDD10000B798E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		6F0CF04D17BFE21E000B798E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		6F0CF04E17BFE21E000B798E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		6F0CF05117BFE2DA000B798E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		6F0CF05217BFE2DA000B798E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		6F0CF05317BFE2DA000B798E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		6F0CF05A17C074D7000B798E /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		6F0CF05B17C074D7000B798E /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		6F0CF05D17C0796B000B798E /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extensions.h"; sourceTree = "<group>"; };
+		6F0CF05E17C0796B000B798E /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extensions.m"; sourceTree = "<group>"; };
 		6FCC197817BFD4FD009F63CE /* GD_frameMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GD_frameMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC197B17BFD4FD009F63CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6FCC197D17BFD4FD009F63CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,11 +149,19 @@
 		6F0CF05017BFE26B000B798E /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				6F0CF05117BFE2DA000B798E /* SVProgressHUD.bundle */,
-				6F0CF05217BFE2DA000B798E /* SVProgressHUD.h */,
-				6F0CF05317BFE2DA000B798E /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		6F0CF05917C074C9000B798E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6F0CF05A17C074D7000B798E /* UIImage+Extensions.h */,
+				6F0CF05B17C074D7000B798E /* UIImage+Extensions.m */,
+				6F0CF05D17C0796B000B798E /* NSDate+Extensions.h */,
+				6F0CF05E17C0796B000B798E /* NSDate+Extensions.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		6FCC196F17BFD4FD009F63CE = {
@@ -289,19 +298,12 @@
 		6FCC19C817BFD7FE009F63CE /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6F0CF05917C074C9000B798E /* Tools */,
 				6F0CF05017BFE26B000B798E /* SVProgressHUD */,
 				6F0CF04C17BFDDF6000B798E /* JSONKit */,
 				6F0CF03C17BFDCC1000B798E /* FMDB */,
-				6FCC19C917BFD810009F63CE /* Tools */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		6FCC19C917BFD810009F63CE /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +386,6 @@
 				6FCC199E17BFD4FD009F63CE /* MainMasterViewController_iPad.xib in Resources */,
 				6FCC19A117BFD4FD009F63CE /* MainDetailViewController_iPhone.xib in Resources */,
 				6FCC19A417BFD4FD009F63CE /* MainDetailViewController_iPad.xib in Resources */,
-				6F0CF05417BFE2DA000B798E /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +430,8 @@
 				6F0CF04A17BFDD10000B798E /* FMDatabaseQueue.m in Sources */,
 				6F0CF04B17BFDD10000B798E /* FMResultSet.m in Sources */,
 				6F0CF04F17BFE21E000B798E /* JSONKit.m in Sources */,
-				6F0CF05517BFE2DA000B798E /* SVProgressHUD.m in Sources */,
+				6F0CF05C17C074D7000B798E /* UIImage+Extensions.m in Sources */,
+				6F0CF05F17C0796B000B798E /* NSDate+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
