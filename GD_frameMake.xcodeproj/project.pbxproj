@@ -36,6 +36,7 @@
 		6FCC19B617BFD4FE009F63CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC19B417BFD4FE009F63CE /* InfoPlist.strings */; };
 		6FCC19B917BFD4FE009F63CE /* GD_frameMakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC19B817BFD4FE009F63CE /* GD_frameMakeTests.m */; };
 		6FCC19CC17BFD8DA009F63CE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCC19CB17BFD8DA009F63CE /* libsqlite3.dylib */; };
+		F503861417DF737900F9AA47 /* RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = F503861317DF737900F9AA47 /* RegularExpression.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		6FCC19B717BFD4FE009F63CE /* GD_frameMakeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GD_frameMakeTests.h; sourceTree = "<group>"; };
 		6FCC19B817BFD4FE009F63CE /* GD_frameMakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GD_frameMakeTests.m; sourceTree = "<group>"; };
 		6FCC19CB17BFD8DA009F63CE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F503861217DF737900F9AA47 /* RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpression.h; sourceTree = "<group>"; };
+		F503861317DF737900F9AA47 /* RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpression.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,7 @@
 		6F0CF05917C074C9000B798E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F503861117DF736A00F9AA47 /* Regular */,
 				6F0CF05A17C074D7000B798E /* UIImage+Extensions.h */,
 				6F0CF05B17C074D7000B798E /* UIImage+Extensions.m */,
 				6F0CF05D17C0796B000B798E /* NSDate+Extensions.h */,
@@ -306,6 +310,15 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
+		F503861117DF736A00F9AA47 /* Regular */ = {
+			isa = PBXGroup;
+			children = (
+				F503861217DF737900F9AA47 /* RegularExpression.h */,
+				F503861317DF737900F9AA47 /* RegularExpression.m */,
+			);
+			path = Regular;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,6 +445,7 @@
 				6F0CF04F17BFE21E000B798E /* JSONKit.m in Sources */,
 				6F0CF05C17C074D7000B798E /* UIImage+Extensions.m in Sources */,
 				6F0CF05F17C0796B000B798E /* NSDate+Extensions.m in Sources */,
+				F503861417DF737900F9AA47 /* RegularExpression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
